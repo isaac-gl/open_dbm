@@ -14,6 +14,8 @@ raw_feature:
     ang_exp: fac_angintsoft
     dis_exp: fac_disintsoft
     con_exp: fac_conintsoft
+    hap_supr_exp: fac_happsuprintsoft
+    hap_supr_exp_full: fac_happsuprinthard
     happ_occ: fac_happres
     sad_occ: fac_sadpres
     sur_occ: fac_surpres
@@ -38,6 +40,7 @@ raw_feature:
     neu_exp_full: neu_exp_full
     cai_exp_full: cai_exp_full
     com_exp_full: fac_cominthard
+    
     
     #Facial asymmetry
     fac_AsymMaskMouth: fac_asymmaskmouth

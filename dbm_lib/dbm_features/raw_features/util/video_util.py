@@ -139,12 +139,14 @@ def calc_of_for_video(of,face_cfg,fe_cfg):
                fe_cfg.sur_occ,fe_cfg.fea_occ,fe_cfg.ang_occ,fe_cfg.dis_occ,fe_cfg.con_occ,fe_cfg.hap_exp_full,
                 fe_cfg.sad_exp_full,fe_cfg.sur_exp_full,fe_cfg.fea_exp_full,fe_cfg.ang_exp_full,fe_cfg.dis_exp_full,
                 fe_cfg.con_exp_full,fe_cfg.neg_exp_full,fe_cfg.pos_exp_full,fe_cfg.neu_exp_full,fe_cfg.cai_exp_full,
-                fe_cfg.com_exp_full]
+                fe_cfg.com_exp_full, fe_cfg.hap_supr_exp_full, fe_cfg.hap_supr_exp]
     of[new_cols] = pd.DataFrame([[0] * len(new_cols)], index=of.index)
     of[fe_cfg.err_reason] = 'Pass'
     
     #Composite happiness expressivity
     emotion_exp(face_cfg.happiness,of,[fe_cfg.hap_exp,fe_cfg.hap_exp_full],fe_cfg.err_reason)
+    #Composite happilly suprised expressivity
+    emotion_exp(face_cfg.happillySuprised,of,[fe_cfg.hap_supr_exp,fe_cfg.hap_supr_exp_full],fe_cfg.err_reason)
     #Composite sadness expressivity
     emotion_exp(face_cfg.sadness,of,[fe_cfg.sad_exp,fe_cfg.sad_exp_full],fe_cfg.err_reason)
     #Composite surprise expressivity

@@ -28,6 +28,7 @@ class ConfigFaceReader(object):
             config = yaml.load(ymlfile)
             self.ACTION_UNITS = config['cdx_face_config']['ACTION_UNITS']
             self.NEG_ACTION_UNITS = config['cdx_face_config']['NEG_ACTION_UNITS']
+            self.happillySuprised = config['cdx_face_config']['happillySuprised']
             self.POS_ACTION_UNITS = config['cdx_face_config']['POS_ACTION_UNITS']
             self.NET_ACTION_UNITS = config['cdx_face_config']['NET_ACTION_UNITS']            
             self.happiness = config['cdx_face_config']['happiness']

@@ -4,6 +4,7 @@ cdx_face_config:
     POS_ACTION_UNITS: [[6, 12]]
     NET_ACTION_UNITS: [[1, 2, 5, 26]]
     happiness: [[6, 12]]
+    happillySuprised: [[1,2,12,25]]
     sadness: [[1, 4, 15]]
     surprise: [[1, 2, 5, 26]]
     fear: [[1, 2, 4, 5, 7, 20, 26]]
